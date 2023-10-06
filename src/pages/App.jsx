@@ -31,7 +31,7 @@ const App = () => {
             onAdd={() =>
               handleAddProduct({
                 name: "League of Legends",
-                price: 99.9,
+                price: 199.99 - 199.99 *0.3,
                 img: "League of Legends",
               })
             }

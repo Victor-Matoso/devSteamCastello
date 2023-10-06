@@ -16,6 +16,10 @@
     padding-bottom: 40px;
 }
 
+.options p{
+    text-align: center;
+}
+
 .priceLine{
     display: flex;
     justify-content: space-between;
@@ -28,6 +32,6 @@
 }
 
 .priceLine h2:nth-last-of-type(2) {
-    color: #beeb14;
+    color: white;
     padding-bottom: 20px;
 }

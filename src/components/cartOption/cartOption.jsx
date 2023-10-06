@@ -12,7 +12,7 @@ export const cartOption = ({ img, title, price, onRemove }) => {
       <div className={styles.info}>
         <h3>{title}</h3>
         <h3>R$ {price.toFixed(2)}</h3>
-        <p>Remover</p>
+        <p onClick={onRemove}>Remover</p>
       </div>
     </div>
   );
@@ -21,6 +21,7 @@ export const cartOption = ({ img, title, price, onRemove }) => {
 cartOption.defaultProps = {
   img: "gameOver",
   price: 99.9,
+  title:"CSGO",
 };
 
 export default cartOption;
