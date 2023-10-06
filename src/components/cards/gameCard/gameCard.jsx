@@ -2,7 +2,7 @@ import styles from "./gameCard.module.css";
 import Button from "../../forms/button/button";
 import { Children } from "react";
 
-const GameCard = ({ children, title, info, price }) => {
+const GameCard = ({ children, title, info, price, onAdd }) => {
   return (
     <div className={styles.gameCard}>
       <img
@@ -16,7 +16,7 @@ const GameCard = ({ children, title, info, price }) => {
         <p>{info}</p>
         <div className={styles.pricing}>
           <h2>R$ {price.toFixed(2)}</h2>
-          {title !== "gameOver" && <Button>Adicionar ao Carrinho</Button>}
+          {title !== "gameOver" && <Button onClick={onAdd}>Adicionar ao Carrinho</Button>}
         </div>
       </div>
     </div>
